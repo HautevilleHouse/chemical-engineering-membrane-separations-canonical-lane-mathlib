@@ -1,0 +1,16 @@
+import ChemicalEngineeringMembraneSeparationsCanonicalLaneLean.TransportMechanisms
+import ChemicalEngineeringMembraneSeparationsCanonicalLaneLean.MembraneMaterials
+import ChemicalEngineeringMembraneSeparationsCanonicalLaneLean.FinalTheorem
+
+namespace HautevilleHouse
+namespace ChemicalEngineeringMembraneSeparationsCanonicalLaneLean
+
+def membraneClosureCheck (A : AdmissibleClass) : Prop :=
+  ConstrainedMembraneClosure A
+
+theorem membrane_closure_check_proven (A : AdmissibleClass) :
+  membraneClosureCheck A := by
+  exact constrained_membrane_endgame A
+
+end ChemicalEngineeringMembraneSeparationsCanonicalLaneLean
+end HautevilleHouse
